@@ -31,7 +31,7 @@ function DynamicForm() {
         })}
       />
 
-      {errors.firstField && <p>{errors.firstField.message}</p>}
+      {errors.firstField && <span style={{ color: 'red' }}>{errors.firstField.message}</span>}
 
       {firstFieldValue?.length >= 5 && (
         <>
